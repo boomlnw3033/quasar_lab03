@@ -17,9 +17,9 @@
 
       <q-input
         filled
-        type="number"
+        type="番号"
         v-model="age"
-        label="Your age *"
+        label="あなたの年齢 *"
         lazy-rules
         :rules="[
           val => val !== null && val !== '' || 'Please type your age',
