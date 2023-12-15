@@ -9,21 +9,21 @@
       <q-input
         filled
         v-model="name"
-        label="あなたの名前 *"
-        hint="名前と苗字"
+        label="Your name *"
+        hint="Name and surname"
         lazy-rules
-        :rules="[ val => val && val.length > 0 || '何か入力してください']"
+        :rules="[ val => val && val.length > 0 || 'Please type something']"
       />
 
       <q-input
         filled
-        type="番号"
+        type="number"
         v-model="age"
         label="あなたの年齢 *"
         lazy-rules
         :rules="[
-          val => val !== null && val !== '' || 'Please type your age',
-          val => val > 0 && val < 100 || 'Please type a real age'
+          val => val !== null && val !== '' || 'あなたの年齢を入力してください',
+          val => val > 0 && val < 100 || '実年齢を入力してください'
         ]"
       />
 
