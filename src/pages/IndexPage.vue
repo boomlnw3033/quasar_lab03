@@ -27,6 +27,18 @@
         ]"
       />
 
+      <q-input
+        filled
+        type="number"
+        v-model="age"
+        label="あなたの年齢 *"
+        lazy-rules
+        :rules="[
+          val => val !== null && val !== '' || 'あなたの年齢を入力してください',
+          val => val > 0 && val < 100 || '実年齢を入力してください'
+        ]"
+      />
+
       <q-toggle v-model="accept" label="I accept the license and terms" />
 
       <div>
