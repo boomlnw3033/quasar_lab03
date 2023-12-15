@@ -98,7 +98,7 @@ module.exports = configure(function (ctx) {
       // directives: [],
 
       // Quasar plugins
-      plugins: []
+      plugins: ['Notify']
     },
 
     // animations: 'all', // --- includes all animations
@@ -220,12 +220,4 @@ module.exports = configure(function (ctx) {
       
     }
   }
-  // Add notify in plugins(quasar.conf.js)
-    return {
-      framework: {
-      plugins: [
-        'Notify'
-      ],
-      }
-    }
 });
