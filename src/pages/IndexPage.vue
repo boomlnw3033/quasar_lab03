@@ -39,7 +39,7 @@
         ]"
       />
 
-      <q-toggle v-model="accept" label="ยอมรับ" />
+      <q-toggle v-model="accept" label="accept"/>
 
       <div>
         <q-btn label="Submit" type="submit" color="primary"/>
