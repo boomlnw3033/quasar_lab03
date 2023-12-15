@@ -220,4 +220,12 @@ module.exports = configure(function (ctx) {
       
     }
   }
+  // Add notify in plugins(quasar.conf.js)
+    return {
+      framework: {
+      plugins: [
+        'Notify'
+      ],
+      }
+    }
 });
